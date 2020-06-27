@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(237, 49%, 15%);   
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    width: 50%;
+    /* background-color: aqua; */
+    margin: 50px auto;
+
+}
+.score__container {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 20px;
+}
+.score__container img {
+    display: block;
+    max-width: 100%;
+}
+.score__container .box {
+    width: 30%;
+    height: 80%;
+    margin: 0 20px;
+}
+.score__container .box.score {
+    background-color: white;
+    width: 8rem;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.score__container .box.score b {
+    font-size: 1rem;
+    color: hsl(229, 64%, 46%);
+}
+.score__container .box.score span {
+    font-size: 3rem;
+    display: block;
+    font-weight: 700;
+}
+/* gameplay */
+
+.container__gameplay {
+    width: 70%;
+    margin: 20px auto 0;
+    
+}
+
+.container__gameplay .triangle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.container__gameplay .box{
+    
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.container__gameplay .box img{
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    display: block;
+    margin:30px auto;
+    background-color: hsl(217, 16%, 45%);
+    color: black;
+}
+.container__gameplay .rock {
+    background-color: hsl(349, 71%, 52%);
+    box-shadow: 1px 6px hsl(349, 70%, 56%);
+}
+
+.container__gameplay .scissors {
+    background-color: hsl(39, 89%, 49%);
+    box-shadow: 1px 6px hsl(40, 84%, 53%);
+}
+.container__gameplay .paper {
+    background-color: hsl(230, 89%, 62%);
+    box-shadow: 1px 6px hsl(230, 89%, 65%);
+}
+
+.container__gameplay .box:hover {
+    box-shadow: none;
+}
+/* Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%) */
